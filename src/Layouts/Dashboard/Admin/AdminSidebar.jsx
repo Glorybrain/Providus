@@ -161,16 +161,6 @@ export const AdminSidebar = () => {
                     </IconWrapper>
                   </div>
                 </footer>
-
-                <button
-                  type="button"
-                  onClick={closeSideBar}
-                  className="flex md:hidden"
-                >
-                  <IconWrapper>
-                    <X />
-                  </IconWrapper>
-                </button>
               </div>
             </div>
           </div>

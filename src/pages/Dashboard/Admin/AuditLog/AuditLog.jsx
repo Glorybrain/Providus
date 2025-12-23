@@ -97,10 +97,6 @@ export const AuditLog = () => {
     <div className="p-4 md:p-6">
       <main className="space-y-6">
         <section className="space-y-5">
-          <div className="flex flex-col pb-4 border-b border-[#EBEBEB]  lg:hidden">
-            <span className="text-lg text-[#171717] font-medium">Admin</span>
-            <span className="text-sm text-[#5C5C5C]">Welcome back Chima</span>
-          </div>
           <header className="flex flex-col lg:border-b border-[#EBEBEB] pb-4 justify-between gap-y-4 md:flex-row md:items-center">
             <div className="flex flex-col">
               <div className="flex items-center gap-x-2">

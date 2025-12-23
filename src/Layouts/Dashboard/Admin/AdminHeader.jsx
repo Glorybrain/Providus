@@ -16,31 +16,18 @@ export const AdminHeader = () => {
   };
 
   return (
-    <header className="w-full px-4 py-5 mx-auto lg:6">
+    <header className="w-full px-4 py-4 mx-auto lg:py-5">
       <div className="flex items-center justify-between">
-        <header className="flex items-center justify-between flex-1 lg:hidden gap-x-1">
-          <div className="flex items-center gap-x-1.5">
-            <figure>
-              <img src={LogoFullWhiteVariant} alt="" />
-            </figure>
-            <div className="flex flex-col gap-1">
-              <h1 className="text-sm font-medium text-[#171717]">
-                Providus Bank
-              </h1>
-            </div>
-          </div>
-        </header>
-
-        <button className="lg:hidden">
-          <IconWrapper>
-            <MenuIcon />
-          </IconWrapper>
-        </button>
-
-        <div className="flex-col hidden lg:flex">
+        <div className="flex flex-col lg:flex">
           <span className="text-lg text-[#171717] font-medium">Admin</span>
           <span className="text-sm text-[#5C5C5C]">Welcome back Chima</span>
         </div>
+
+        <button onClick={toggleSidebar} className="lg:hidden">
+          <IconWrapper>
+            <MenuIcon className="w-6 h-6 text-[#1D2939]" />
+          </IconWrapper>
+        </button>
       </div>
     </header>
   );

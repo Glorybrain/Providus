@@ -118,11 +118,6 @@ export const RequestHistory = () => {
   return (
     <div className="p-4 md:p-6">
       <main className="">
-        <div className="flex flex-col pb-4 border-b border-[#EBEBEB]  lg:hidden">
-          <span className="text-lg text-[#171717] font-medium">Admin</span>
-          <span className="text-sm text-[#5C5C5C]">Welcome back Chima</span>
-        </div>
-
         <section className="space-y-5">
           <div className="grid py-5 border-t border-b border-dashed border-[#EBEBEB] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="flex-1 bg-[#FCF6E8] relative overflow-hidden rounded-lg">

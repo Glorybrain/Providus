@@ -18,33 +18,21 @@ export const CsoHeader = () => {
   return (
     <header className="w-full px-4 py-5 mx-auto lg:6">
       <div className="flex items-center justify-between">
-        <header className="flex items-center justify-between flex-1 lg:hidden gap-x-1">
-          <div className="flex items-center gap-x-1.5">
-            <figure>
-              <img src={LogoFullWhiteVariant} alt="" />
-            </figure>
-            <div className="flex flex-col gap-1">
-              <h1 className="text-sm font-medium text-[#171717]">
-                Providus Bank
-              </h1>
-            </div>
-          </div>
-        </header>
-
         <div className="flex items-center gap-x-2">
           <figure className="lg:w-14 bg-[#FFECC0] rounded-full w-10 h-10 lg:h-14">
             <img src={DefaultAvatar} alt="" className="w-full h-full" />
           </figure>
-          <div className="flex-col hidden lg:flex">
+          <div className="flex-col hidden md:flex">
             <span className="text-lg text-[#171717] font-medium">
               Chima Kenny
             </span>
             <span className="text-sm text-[#5C5C5C]">Welcome CSO</span>
           </div>
         </div>
-        <button className="ml-3 lg:hidden">
+
+        <button onClick={toggleSidebar} className="lg:hidden">
           <IconWrapper>
-            <MenuIcon />
+            <MenuIcon className="w-6 h-6 text-[#1D2939]" />
           </IconWrapper>
         </button>
       </div>
