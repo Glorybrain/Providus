@@ -10,6 +10,7 @@ import CsoVector5 from "@/assets/media/images/Vector 7.png";
 import CsoVector6 from "@/assets/media/images/Vector 8.png";
 import CsoVector7 from "@/assets/media/images/Vector 9.png";
 import CsoVector8 from "@/assets/media/images/Vector 10.png";
+import AuthBg from "@/assets/media/images/18952625_6058462 1.png";
 
 // logos
 import LogoFullDarkVariant from "@/assets/media/logos/Apex.svg";
@@ -42,4 +43,5 @@ export {
   CsoVector6,
   CsoVector7,
   CsoVector8,
+  AuthBg,
 };

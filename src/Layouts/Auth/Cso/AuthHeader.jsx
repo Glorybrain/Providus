@@ -6,7 +6,7 @@ import { HelpCircle, X } from "lucide-react";
 
 export const CsoAuthHeader = () => {
   return (
-    <header className="md:py-6 py-4 border-b border-[#EBEBEB]">
+    <header className="md:py-3 md:pt-4 relative z-20 bg-white py-2 border-b border-[#EBEBEB]">
       <div className="px-4 mx-auto md:px-0 md:w-11/12 xl:w-10/12">
         <nav className="flex items-center justify-between">
           <figure>

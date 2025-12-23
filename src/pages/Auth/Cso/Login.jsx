@@ -11,7 +11,7 @@ const CsoLogin = () => {
 
   return (
     <div className="">
-      <div className="bg-white rounded-[1rem] rounded-bl-none py-[2.6rem]">
+      <div className="px-4 py-5 bg-white rounded-lg lg:px-6">
         <form action="" className="v-form">
           <div className="mx-auto bg-[linear-gradient(180deg,rgba(113,119,132,0.1)_0%,rgba(113,119,132,0)_100%)] w-fit p-4 rounded-full">
             <IconWrapper className="bg-white border p-4 rounded-full border-[#EBEBEB]">
