@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Providus;
+  src: url("../fonts/Inter.ttf") format("truetype");
+}
+@layer base {
+  :root {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --font-family: Providus, system-ui, Helvetica, Arial;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: var(--font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span:not(:has(img, .img-fluid)) {
+  image-rendering: pixelated;
+  text-rendering: geometricPrecision;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+a,
+button,
+[href],
+[type="button"] {
+  font-family: var(--font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b{
+  font-family: var(--font-family);
+}
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  will-change: background-color, color;
+  transition: 300ms ease-in-out;
+  transition-property: background-color;
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  /* border: none; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+body:has(.no-scroll) {
+  overflow-y: hidden;
+}
+.rounded-no-tl {
+  border-top-left-radius: 0 !important;
+}
+.rounded-no-tr {
+  border-top-right-radius: 0 !important;
+}
+.rounded-no-bl {
+  border-bottom-left-radius: 0 !important;
+}
+.rounded-no-br {
+  border-bottom-right-radius: 0 !important;
+}
+.form-control {
+  @apply bg-slate-300 rounded-[.5rem] p-[0.75rem] w-full;
+}
+.animate-active {
+  @apply transition-all duration-300 ease-linear active:scale-95;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-wave {
+  animation: wave 2s infinite;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}

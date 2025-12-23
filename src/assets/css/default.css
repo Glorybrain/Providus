@@ -1,0 +1,115 @@
+:root {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--white-variant: 255, 255, 255;
+	--dark-variant: 0, 0, 0;
+	--primary-clr-variant: 1, 57, 48;
+
+	--dark: rgba(var(--dark-variant), 1);
+	--white: rgba(var(--white-variant), 1);
+	--main-bg-clr: #f7f9fa;
+	--border-line-clr: #cecece6e;
+	--link-clr: rgb(62, 76, 89);
+	--primary-clr: rgba(var(--primary-clr-variant), 1);
+	--link-clr: rgb(62, 76, 89);
+	--hero-grey: #eff5fc;
+	--form-control-bg: #f8f9fd;
+	--footer-link-clr: #0b0e11;
+	--red: rgb(255, 0, 0);
+	--red-bg: rgb(255, 0, 0, 0.1);
+
+	--common-faint-bg: rgba(245, 245, 220, 1);
+
+	--_1-bg-clr: #dfffe8;
+	--_1-clr: #069b40;
+	--_2-bg-clr: #f1d6fe;
+	--_2-clr: #7913e5;
+	--_3-bg-clr: #dff4ff;
+	--_3-clr: #3296ff;
+	--_4-bg-clr: #dff6ff;
+	--_4-clr: #3296ff;
+	--_5-bg-clr: #e3fff8;
+	--_5-clr: #00bf7b;
+	--_6-bg-clr: #d6feda;
+	--_6-clr: #219653;
+	--_7-bg-clr: #f0f8dd;
+	--_7-clr: #6c9e02;
+	--_8-bg-clr: #f2ffdc;
+	--_8-clr: #5f9a00;
+	--_9-bg-clr: #dfe3e4;
+	--_9-clr: #000000;
+	--_10-bg-clr: #fffeea;
+	--_10-clr: #f5b300;
+	--_11-bg-clr: #ffeaf6;
+	--_11-clr: #ff007d;
+	--_12-bg-clr: #dfe4ff;
+	--_12-clr: #0d2ba8;
+
+	--orange-bg: #fff5d9;
+
+	/* color-scheme: light dark; */
+	/* font-synthesis: none; */
+}
+svg {
+	--size: 1.3rem;
+	width: var(--size);
+	height: var(--size);
+	user-select: none;
+	pointer-events: none;
+}
+
+::selection {
+	background-color: rgba(var(--primary-clr-variant), 0.2);
+	color: var(--primary-clr-dark);
+}
+:is(.modal, .offcanvas) .btn-close {
+	box-shadow: 0 0 0 0.25rem transparent;
+}
+:is(.modal, .offcanvas) .btn-close:focus {
+	box-shadow: 0 0 0 0.25rem rgba(var(--primary-clr-variant), 0.25);
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--primary-clr);
+	border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+[class*="col-"] {
+	transition: width 300ms ease-in-out;
+	will-change: width;
+}
+.v-separator {
+	border-top: 1px solid rgba(var(--dark-variant), 0.5);
+	margin-block: 1.5rem;
+}
+[type="radio"] {
+	transition: 300ms ease-in-out;
+}
+[type="radio"]:focus {
+	box-shadow: 0 0 0 0.25rem rgba(var(--primary-clr-variant), 0.25);
+}
+[type="radio"]:checked {
+	background-color: var(--primary-clr);
+	border-color: var(--primary-clr);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+.v-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-control {
+	@apply rounded-[.5rem] p-[0.75rem] w-full;
+}
